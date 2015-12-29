@@ -1,0 +1,326 @@
+@import "variables.styl" on line 1
+
+@media all and (min-width:769px)
+	body
+		#mobile-header
+			display none
+		
+		#nav
+			.nav-trigger
+				display none
+
+@media all and (max-width:768px)
+	// global -- clean up code for .nav-trigger class once final images approved
+	body
+		#mobile-header
+			background $blue
+			position relative
+			height 60px
+			z-index 10000 !important
+			
+			.nav-trigger
+				position absolute
+				top 50%
+				left 2%
+				transform translateY(-50%)
+				background none
+				border none
+				color $bronze
+				font-size 40px
+				
+				&:focus
+					outline none
+				
+				img
+					height 20px
+					margin-bottom 5px 
+					
+
+			#mobile-logo
+				position absolute
+				top 50%
+				left 50%
+				transform translate(-50%, -50%)
+				
+				img
+					height 35px
+					width 100%
+					
+		#nav
+			z-index 99999 !important
+			width 310px
+			max-width 100%
+			margin-left -100%
+			opacity 0
+			-webkit-transition all .2s ease-in-out
+			-moz-transition all .2s ease-in-out
+			-ms-transition all .2s ease-in-out
+			-o-transition all .2s ease-in-out
+			transition all .2s ease-in-out
+			
+			&.reveal
+				margin-left 0
+				opacity 1
+				box-shadow 0 0 3px #111
+				
+			
+			.nav-trigger
+				position absolute
+				top 15px
+				right 15px
+				background none
+				border none
+				font-size 2em
+				
+				&:focus
+					outline none
+				
+				img
+					height 30px 
+					width auto
+				
+			ul
+				&.links 
+					margin-top 20px
+			
+			.nav-footer
+				font-size 8pt
+				
+				.contact-info
+					margin-top 20px
+				
+				.social-media ul
+					margin initial
+		
+		#pg-16-1, #pg-16-2, #pg-16-3, #pg-16-4, #pg-22-0, #pg-22-1, #pg-22-2, #pg-22-3, #pg-22-4, #pg-22-5
+			margin-bottom 15px
+
+		.main-content
+			.first-content
+				padding 20px
+				
+			.banner-img
+				height 80vh
+				padding-left 0
+				
+				h1
+					padding 0 10px
+					font-size 1.25em
+					
+			.scroll-down-wrapper
+				padding-left 0
+			
+			.body-content#body-content, .body-content
+				padding 0
+			
+			.body-content
+				margin-top 15px
+				
+				#pg-11-2, #pg-11-4, #pg-20-0, #pg-20-1, #pg-20-2, #pg-20-3, #pg-20-4
+					margin-bottom 0
+
+				.panel-widget-style, .panel-row-style, .widget_sow-image
+					padding 15px 0 !important
+				
+				.panel-grid
+					.panel-grid-cell
+						.widget_text
+							.textwidget
+								text-align center
+							
+							.widget-title
+								text-align center
+								margin 0 0 5px 0
+						
+					.one-col
+						.panel-grid-cell
+							.widget_text
+								.caption
+									.textwidget
+										text-align center
+				
+				& > div > .panel-grid
+					padding 0 20px							
+
+		// home page
+		&.home
+			overflow hidden
+			
+			.main-content
+				position relative
+				top initial
+				left initial
+				left initial
+				right initial
+				bottom initial
+				padding initial
+				overflow hidden
+				
+				.home-slider
+					height 100vh
+					overflow initial
+					
+					.flexslider		
+						ol.flex-control-nav
+							position fixed
+							padding 25px
+							width 300px
+							text-align center
+							
+							li
+								float none
+		
+		// residences 
+		
+		&.page-id-11
+			.main-content 
+				.first-content
+					button.inquiries
+						float none
+						display block
+						margin 10px auto
+						width 100%
+				
+				.body-content button.inquiries
+					width 90%
+					margin 20px auto 50px
+					box-sizing border-box
+
+				h1
+					margin 50px auto 20px
+				
+				.subheader
+					margin 20px auto
+					
+				button#floor-plans, button#interior-specs
+					padding 7px 0
+					width 48%
+					margin 0 0 90px 0
+				
+				button#floor-plans
+					float left
+				
+				button#interior-specs
+					float right
+				
+				.clear
+					clear both
+		
+		// views
+		&.page-id-13
+			.main-content
+				.first-content
+					.content-wrapper
+						.views-position
+							h1.page-header
+								font-size 1.25em
+								margin 20px auto 50px
+
+							p.subheader
+								margin 0 auto 50px
+								font-size .9em
+		// amenities
+		&.page-id-16
+			.other-amenities
+				.panel-grid
+					.panel-grid-cell
+						h1
+							margin 0 !important
+							
+			#pl-w565f549d58068 
+				.panel-grid
+					padding 0
+				
+				.panel-grid-cell
+					margin-top 15px
+
+
+		// news
+		&.page-id-26
+			.main-content
+				padding 20px
+				
+				.blog-wrap
+					.post
+						padding-top 20px
+						
+						img 
+							width 100%
+							
+						.post-content
+							.widget_text
+								padding 10px 0
+							
+							.share-via
+								margin-left 0
+								margin-bottom 10px
+		
+		// connect
+		&.page-id-24
+			.main-content
+				padding 0 10px
+				
+				.two-col 
+					ul 
+						li
+							fieldset
+								section
+									float left
+									width 100%
+									text-align center
+					
+								
+@media all and (max-width:1750px)
+	// connect 
+	body
+		&.page-id-24
+			.main-content
+				.two-col
+					ul
+						li
+							label
+								float none
+							
+							input, select, textarea
+								float none
+								width 100%
+							
+							select 
+								margin-top 10px
+							
+							fieldset
+								section
+									width 100%
+									text-align center
+					
+					button
+						float none !important
+						width 100% !important
+
+@media all and (max-width:1024px)
+	// connect
+	body
+		&.page-id-24
+			.main-content
+				// display -webkit-box
+				// display -moz-box
+				// display box
+				// -webkit-box-orient vertical
+				// -moz-box-orient vertical
+				// box-orient vertical
+				// padding 0 10px
+				
+				.two-col
+					width 100%
+					
+					// &:first-child
+					// 	-webkit-box-ordinal-group 2
+					// 	-moz-box-ordinal-group 2
+					// 	box-ordinal-group 2
+
+					// &:last-child
+					// 	-webkit-box-ordinal-group 3
+					// 	-moz-box-ordinal-group 3
+					// 	box-ordinal-group 3
+					.subheader
+						margin-bottom 50px

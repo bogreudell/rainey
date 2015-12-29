@@ -1,0 +1,109 @@
+body {
+  position: relative;
+}
+body nav {
+  font-family: "sans", sans-serif;
+  min-height: 100vh;
+  height: 100%;
+  padding: 90px;
+  background: #00253c;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  width: 340px;
+  padding: 50px;
+  overflow: scroll;
+}
+body nav * {
+  color: #92624b;
+}
+body nav #logo {
+  height: 72px;
+}
+body nav #logo img {
+  height: 100%;
+  width: auto;
+}
+body nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+body nav ul.links {
+  margin-top: 90px;
+  font-size: 10.5pt;
+}
+body nav ul.links li a {
+  letter-spacing: 4px;
+  line-height: 2.5;
+}
+body nav ul.links li a.active::before {
+  content: "•";
+  margin: 0 5px 0 -17.5px;
+}
+body nav ul.links li a.active ~ .dropdown {
+  display: block;
+}
+body nav ul.links li .dropdown {
+  padding-left: 15px;
+  overflow: hidden;
+  display: none;
+}
+body nav ul.links li button {
+  background: transparent;
+  border: none;
+  font-size: 0.8rem;
+  line-height: 2.5;
+  letter-spacing: 4px;
+  outline: none;
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: 9pt;
+}
+body nav a {
+  text-decoration: none;
+}
+body nav section.nav-footer {
+  position: absolute;
+  bottom: 40px;
+  font-family: "serif", serif;
+  font-size: 10pt;
+}
+body nav section.nav-footer.overlapped {
+  position: initial;
+}
+body nav section.nav-footer .contact-info {
+  display: inline-block;
+  border-bottom: 1px solid #92624b;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  padding-bottom: 10px;
+  font-family: "Goldenbook-Light", serif;
+}
+body nav section.nav-footer .contact-info p {
+  font-size: 1.2rem;
+  font-size: 1em;
+  letter-spacing: 1.8px;
+}
+body nav section.nav-footer .contact-info p:last-of-type {
+  letter-spacing: 1.9px;
+}
+body nav section.nav-footer .social-media ul {
+  display: table;
+  margin: auto;
+  float: none;
+}
+body nav section.nav-footer .social-media ul li {
+  float: left;
+  padding: 10px;
+}
+body nav section.nav-footer .social-media ul li.sackman {
+  margin-top: 2px;
+}
+body nav section.nav-footer .social-media ul li.sackman img {
+  height: 18px;
+  width: auto;
+}

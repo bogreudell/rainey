@@ -1,0 +1,294 @@
+@import "variables"
+
+// Page 11 - Residences
+.page-id-11
+  .main-content
+    .body-content
+      &#body-content
+        padding-bottom 0
+
+      .panel-grid
+        .two-col
+          .panel-grid-cell
+            .widget_sow-image
+              padding 0 70px 40px
+
+            .widget_sow-image
+                .vertical
+                 .so-widget-sow-image
+                  max-height 660px
+
+      button.inquiries
+        span
+          border-bottom-width 0
+          position relative
+
+          span.line
+            background $cream
+            width 0
+            height 1px
+            position absolute
+            bottom -7px
+            left 0
+            transition width ease-in-out .2s
+
+        &:hover
+          span.line
+            width 96%
+
+// Page 13 - Views
+.page-id-13
+  .main-content
+    .first-content
+      .content-wrapper
+        position relative
+        max-width initial
+        width 100%
+        max-width 100%
+        display inline-block
+        height auto
+        width 100%
+        height 100vh
+        margin -60px auto
+
+        .views-position
+          position absolute
+          top 50%
+          transform translateY(-50%) translateX(-50%)
+          max-width 780px
+          width 100%
+          left 50%
+
+          h1.page-header
+            font-size 2.5em
+
+          p.subheader
+            font-family 'Goldenbook', serif
+            font-size 1.3em
+
+          button.module-trigger
+            margin auto
+            display block
+
+//  Page 16 - amenities
+.page-id-16
+  .body-content
+    .two-col
+      .panel-grid-cell
+        &:first-of-type
+          padding-right 75px
+          padding-right 3vw
+
+        &:last-of-type
+          padding-left 75px
+          padding-left 3vw
+
+        .widget_text
+          .widget-title,
+          .textwidget
+            padding 0 !important
+
+    .panel-grid
+      .other-amenities
+        .panel-grid-cell
+          .widget
+            .panel-grid
+              .panel-grid-cell
+                .widget
+                  .widget-title
+                    font-size 1em
+
+
+  .other-amenities
+    padding 0 100px
+    .panel-grid-cell
+      .panel-grid
+        padding-top 40px
+
+        &:not(:first-of-type)
+          padding-bottom 40px
+
+        .panel-grid-cell
+          h1
+            margin 45px 0 20px
+
+        &:not(:first-of-type),
+        &:not(:first-of-type) .textwidget
+          text-align center !important
+
+        &:not(:first-of-type)
+          .panel-grid-cell
+            .widget_text
+              padding 0
+
+//  Page 20 - backyard
+//  Page 22 - vision
+//  Page 24 - contact
+.page-id-24
+  #nav
+    border-right 1px solid $bronze
+
+  .main-content
+    float left
+    color $blue
+    background $cream
+    width 100%
+    padding-left 400px
+    box-sizing border-box
+
+    .two-col
+      width 50%
+      float left
+      padding 4vw
+      box-sizing border-box
+
+      ul
+        list-style-type none
+        padding 0
+
+        li
+          margin-bottom 15px
+          display inline-block
+
+          fieldset
+            legend
+              padding 10px 0
+
+            legend, label, input
+              float left
+
+            section
+              float right
+              width 60%
+
+              label
+                padding 10px 0
+
+                &:first-of-type
+                  margin-right 40px
+
+                input
+                  margin 0 10px 0 0
+                  width initial
+
+          label, legend
+            padding 20px 0 0
+            float left
+            font-family "Goldenbook-Light", serif
+
+          input, select, textarea
+            outline none
+            padding 9px 15px
+            border-radius 0
+            background transparent
+            border 0px solid $blue
+            border-bottom-width 1px
+            width 60%
+            float right
+            font-family "sans", sans
+            box-sizing border-box
+            min-height 42px
+
+          select
+            border 1px solid
+            border-radius 0
+            -webkit-appearance none
+
+      &.form
+        ul
+          li
+            width 100%
+
+        button
+          background $blue
+          color $cream
+          display block
+          margin auto
+          padding 10px 30px
+          width 60%
+          float right
+
+      &.info
+        .contact-info-header
+          text-transform uppercase
+          font-size 1.2em
+          margin-bottom .5em
+
+        p, a
+          text-decoration none
+          color $blue
+          font-family "Goldenbook-Light", serif
+
+        ul.social-links
+          li
+            float inline-block
+
+            a
+              padding 9px 15px 9px 0
+        
+        .map {
+          margin-top 30px
+          border-top 1px solid $blue
+          border-bottom 1px solid $blue
+          text-align center
+        }
+
+//  Page 24 - news
+.page-id-26
+  .main-content
+    float left
+    width 100%
+    padding 60px 60px 60px 460px
+    box-sizing border-box
+    color $blue
+    font-family "Goldenbook", serif
+
+    .blog-wrap
+      max-width 760px
+      margin auto
+
+      .post
+        padding-top 120px
+        display inline-block
+        border-bottom 1px solid $blue
+
+        .subheader
+          font-family "sans", sans-serif
+          margin 0
+          text-align left
+
+        .post-content
+          .widget_text
+            padding 60px 60px 0
+
+          .two-col
+            .panel-grid-cell
+              &:first-of-type
+                padding-right 1vw
+
+              &:last-of-type
+                padding-left 1vw
+
+          .square
+            overflow hidden
+
+            .so-widget-sow-image
+              height 0
+              padding-bottom 100%
+
+              img
+                max-width initial !important
+
+          .share-via
+            list-style-type none
+            padding 0
+            margin-left 60px
+            margin-bottom 120px
+            display inline-block
+
+            li
+              float left
+              margin-right 15px
+
+              a
+                color $blue

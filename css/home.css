@@ -1,0 +1,62 @@
+.home .main-content {
+  position: absolute;
+  top: 0;
+  left: 520px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 0 0 340px;
+  box-sizing: border-box;
+}
+.home .main-content .home-slider {
+  max-width: initial !important;
+  height: 100%;
+  overflow: hidden;
+}
+.home .main-content .home-slider > div {
+  height: 100%;
+}
+.home .main-content .home-slider .flexslider {
+  margin: 0;
+}
+.home .main-content .home-slider .flexslider,
+.home .main-content .home-slider .flexslider ul,
+.home .main-content .home-slider .flexslider ul li,
+.home .main-content .home-slider .flexslider ul li img {
+  height: inherit;
+}
+.home .main-content .home-slider .flexslider ul li img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home .main-content .home-slider .flexslider ol.flex-control-nav {
+  bottom: 0;
+  z-index: 5;
+  padding: 45px;
+  box-sizing: border-box;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home .main-content .home-slider .flexslider ol.flex-control-nav li {
+  float: left;
+}
+.home .main-content .home-slider .flexslider ol.flex-control-nav li a {
+  width: 11px;
+  height: 11px;
+  border: 2px solid #92624b;
+  background: transparent;
+  margin: 0 10px;
+  opacity: 0.5;
+}
+.home .main-content .home-slider .flexslider ol.flex-control-nav li a.flex-active {
+  background: #92624b;
+  height: 15px;
+  width: 15px;
+  border: none;
+}
